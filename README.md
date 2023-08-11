@@ -4,7 +4,7 @@ To be able to run the repository, you must first clone
 Once cloned, it can be run in two ways: from localhost in your machine or using Docker containers.
 
 ### Localhost in your machine
-- Primero, se deben descargar los módulos a utilizar. En este caso, los módulos se encuentran en el archivo "requirements.txt", para descargar los módulos usas el comando `pip install -r requirements.txt`
+- First, you must download the modules to be used. In this case, the modules are located in the file "requirements.txt", to download the modules you use the command `pip install -r requirements.txt`
 - You must create an .env file where the environment variables used by the repository will be stored. To create it, there is a file called "env.txt" which contains a skeleton with the environment variables needed to run the program. The values of the environment variables must be selected by you.
 - In order to run the program, you must run the command `uvicorn main:app --reload`, which executes FastAPI using localhost as the server.
 
