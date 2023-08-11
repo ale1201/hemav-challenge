@@ -17,6 +17,7 @@ You can enter the url "localhost:8000/docs" to test the generated endpoint. Insi
 
 It should be noted that in this case, since the EARTH API from NASA was not working, we made use of the APOD API also from NASA, which returns a JSON but within that json we get different space images that will vary depending on the query params that are entered.
 Additionally, remember that a mock was made to the AWS S3 to simplify its use and facilitate access to accounts and everything related.
+The code makes use of a pool of threads to handle concurrency and increase the speed of the code. Error handling and retries had to be done since some requests could fall and generate errors, so it does a retry.
 
 ## Part 2:
 Considering the application requirements, a possible cloud architecture could be: 
