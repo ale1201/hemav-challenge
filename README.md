@@ -9,7 +9,7 @@ Once cloned, it can be run in two ways: from localhost in your machine or using 
 - In order to run the program, you must run the command `uvicorn main:app --reload`, which executes FastAPI using localhost as the server.
 
 ### Docker container
-. Hay que tener en cuenta que Docker debe estar instalaldo previamente. 
+- Note that Docker must be previously installed. 
 - You must build the container where the application will run. As the Dockerfile is already created, you only need to run the `docker build -t my-fastapi-app .` command for the build.
 - After the container has been built, it is necessary to run it. To do so, the command `docker run -d -p 8000:8000 my-fastapi-app` must be entered. Your application will now be running on localhost.
 
