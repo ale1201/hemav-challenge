@@ -9,7 +9,7 @@ Once cloned, it can be run in two ways: from localhost in your machine or using 
 - In order to run the program, you must run the command `uvicorn main:app --reload`, which executes FastAPI using localhost as the server.
 
 ### Docker container
-- Note that Docker must be previously installed. 
+- Note that Docker must be previously installed. The environment variables already have default values to facilitate the container build, however if you want to change the environment variables, you must modify the Dockerfile.  Keep in mind that uploading variables (such as the api_key) to a repository is a bad practice, ideally you should upload those variables to wherever the application is deployed; if deployed in EC2, you could store them in the AWS parameter store and make the connection from the code.
 - You must build the container where the application will run. As the Dockerfile is already created, you only need to run the `docker build -t my-fastapi-app .` command for the build.
 - After the container has been built, it is necessary to run it. To do so, the command `docker run -d -p 8000:8000 my-fastapi-app` must be entered. Your application will now be running on localhost.
 
