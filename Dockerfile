@@ -6,9 +6,9 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENV API_KEY=${API_KEY:-}
-ENV DEST_BUCKET=${DEST_BUCKET:-}
-ENV BASE_URL=${BASE_URL:-}
+ENV API_KEY=${API_KEY:-jHz62lX9FUdeUOmJUlZmI1PnhpgRKCCuInhsfB7H}
+ENV DEST_BUCKET=${DEST_BUCKET:-hemav_bucket}
+ENV BASE_URL=${BASE_URL:-https://api.nasa.gov/planetary/apod}
 
 
 COPY . .
